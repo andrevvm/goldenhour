@@ -78,7 +78,7 @@ header {
       margin: auto 20px; }
   .mag .mag-cover {
     display: none; }
-    @media screen and (max-device-width: 768px) and (max-aspect-ratio: 5 / 4) {
+    @media screen and (max-width: 768px) and (max-aspect-ratio: 5 / 4) {
       .mag .mag-cover {
         display: block; } }
     .mag .mag-cover .cover {
