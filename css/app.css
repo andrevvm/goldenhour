@@ -160,7 +160,8 @@ input {
     width: auto;
     cursor: pointer;
     background: black;
-    color: white; }
+    color: white;
+    appearance: none; }
 
 
 /*# sourceMappingURL=app.css.map*/
