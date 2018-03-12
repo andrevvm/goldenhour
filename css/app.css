@@ -57,11 +57,9 @@ header {
   text-align: center; }
 
 .mag {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 20px auto;
-  width: auto; }
+  width: auto;
+  text-align: center; }
   .mag .mag-cover,
   .mag .mag-details {
     display: inline-block;
@@ -72,7 +70,8 @@ header {
     min-width: 320px; }
   .mag .mag-details {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    margin: auto; }
     .mag .mag-details .elements {
       margin: auto 20px; }
   .mag .mag-cover {
