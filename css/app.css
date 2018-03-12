@@ -142,15 +142,18 @@ form {
 input {
   box-sizing: border-box;
   font-family: 'Univers LT Std', 'Helvetica', sans-serif;
-  height: 50px;
-  line-height: 50px;
+  height: 50px !important;
+  line-height: 50px !important;
   font-size: 16px;
-  border: 0;
+  border: 0 !important;
   padding: 0 1.25em;
   margin: 0.5em 0;
   text-align: left;
   outline: none;
-  display: inline-block; }
+  display: inline-block;
+  background: white;
+  -webkit-appearance: none;
+  border-radius: 0 !important; }
   input:focus {
     outline: none; }
   input[type="text"], input[type="email"] {
