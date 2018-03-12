@@ -31,7 +31,7 @@ body {
   height: 100vh;
   position: fixed;
   left: 0; }
-  @media screen and (max-device-width: 768px) and (max-aspect-ratio: 5 / 4) {
+  @media screen and (max-width: 960px) and (max-aspect-ratio: 5 / 4) {
     .left {
       display: none; } }
   .left .cover {
@@ -45,7 +45,7 @@ body {
 .right {
   padding-left: 77vh;
   width: 100%; }
-  @media screen and (max-device-width: 768px) and (max-aspect-ratio: 5 / 4) {
+  @media screen and (max-width: 960px) and (max-aspect-ratio: 5 / 4) {
     .right {
       padding-left: 0; } }
 
@@ -78,7 +78,7 @@ header {
       margin: auto 20px; }
   .mag .mag-cover {
     display: none; }
-    @media screen and (max-width: 768px) and (max-aspect-ratio: 5 / 4) {
+    @media screen and (max-width: 960px) and (max-aspect-ratio: 5 / 4) {
       .mag .mag-cover {
         display: block; } }
     .mag .mag-cover .cover {
