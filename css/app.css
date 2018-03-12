@@ -161,7 +161,8 @@ input {
     cursor: pointer;
     background: black;
     color: white;
-    appearance: none; }
+    appearance: none;
+    -webkit-appearance: none; }
 
 
 /*# sourceMappingURL=app.css.map*/
