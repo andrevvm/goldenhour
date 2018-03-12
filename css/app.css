@@ -22,39 +22,78 @@ body {
 
 .page-content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: row; }
+
+.left, .right {
+  width: auto; }
+
+.left {
+  height: 100vh;
+  position: fixed;
+  left: 0; }
+  @media screen and (max-aspect-ratio: 5 / 4) {
+    .left {
+      display: none; } }
+  .left .cover {
+    height: 100%; }
+  .left img {
+    max-height: 100%;
+    width: auto;
+    padding: 2.5vw;
+    box-sizing: border-box; }
+
+.right {
+  padding-left: 77vh;
+  width: 100%; }
+  @media screen and (max-aspect-ratio: 5 / 4) {
+    .right {
+      padding-left: 0; } }
 
 header {
   margin: auto;
-  padding: 20px; }
+  padding: 4vw; }
+
+.release {
+  text-align: center; }
 
 .mag {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: auto;
-  margin: auto;
-  max-height: 80vh; }
+  margin: 20px auto;
+  width: 60%; }
   .mag .mag-cover,
   .mag .mag-details {
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
-    padding: 4%;
     width: 50%;
-    min-width: 300px; }
+    padding: 0 4%;
+    min-width: 320px; }
   .mag .mag-details {
     display: flex;
     flex-flow: column; }
     .mag .mag-details .elements {
-      margin: auto; }
-  .mag .mag-cover .cover {
-    height: 100%; }
-    .mag .mag-cover .cover img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto; }
+      margin: auto 20px; }
+  .mag .mag-cover {
+    display: none; }
+    @media screen and (max-aspect-ratio: 5 / 4) {
+      .mag .mag-cover {
+        display: block; } }
+    .mag .mag-cover .cover {
+      height: 100%; }
+      .mag .mag-cover .cover img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto; }
+
+.signup {
+  width: 50%;
+  margin: 0 auto 50px;
+  min-width: 300px;
+  text-align: center; }
 
 h1 {
   display: block;
@@ -64,10 +103,17 @@ h1 {
   margin: auto;
   background: url("/logo.svg") no-repeat center;
   background-size: 100% auto; }
+  h1 a {
+    display: block; }
 
 h2 {
-  font-size: 16px;
-  text-transform: uppercase; }
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 2em 0;
+  color: black; }
+
+p {
+  line-height: 1.75em; }
 
 form {
   width: 100%;
@@ -85,6 +131,14 @@ form {
 #mce-success-response {
   padding: 0.5em; }
 
+.mc-field-group {
+  width: auto;
+  margin: auto;
+  font-size: 0;
+  text-align: center; }
+  .mc-field-group * {
+    font-size: 16px; }
+
 input {
   box-sizing: border-box;
   font-family: 'Univers LT Std', 'Helvetica', sans-serif;
@@ -94,13 +148,16 @@ input {
   border: 0;
   padding: 0 1.25em;
   margin: 0.5em 0;
-  text-align: center;
-  outline: none; }
+  text-align: left;
+  outline: none;
+  display: inline-block; }
   input:focus {
     outline: none; }
   input[type="text"], input[type="email"] {
-    width: 100%; }
+    width: 60%;
+    min-width: 250px; }
   input[type="submit"] {
+    width: auto;
     cursor: pointer;
     background: black;
     color: white; }
